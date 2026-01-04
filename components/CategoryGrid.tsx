@@ -71,7 +71,7 @@ const categories = [
 
 export default function CategoryGrid() {
   return (
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
       {categories.map((category, index) => {
         const Icon = category.icon;
         return (
@@ -85,14 +85,14 @@ export default function CategoryGrid() {
             <div className={`absolute inset-0 bg-gradient-to-br ${category.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-300`}></div>
 
             {/* Content */}
-            <div className="relative p-6">
-              <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${category.bgGradient} flex items-center justify-center mb-4 group-hover:scale-110 group-hover:bg-white/20 transition-all duration-300`}>
-                <Icon className={`text-3xl bg-gradient-to-br ${category.gradient} bg-clip-text text-transparent group-hover:text-white transition-colors`} />
+            <div className="relative p-8">
+              <div className={`w-20 h-20 rounded-2xl bg-gradient-to-br ${category.bgGradient} flex items-center justify-center mb-5 group-hover:scale-110 group-hover:bg-white/20 transition-all duration-300`}>
+                <Icon className={`text-4xl bg-gradient-to-br ${category.gradient} bg-clip-text text-transparent group-hover:text-white transition-colors`} />
               </div>
-              <h3 className="font-bold text-gray-900 group-hover:text-white transition-colors text-lg">
+              <h3 className="font-bold text-gray-900 group-hover:text-white transition-colors text-xl mb-3">
                 {category.name}
               </h3>
-              <div className="mt-2 flex items-center text-sm text-gray-500 group-hover:text-white/80 transition-colors">
+              <div className="flex items-center text-base text-gray-500 group-hover:text-white/80 transition-colors">
                 <span>Explore →</span>
               </div>
             </div>

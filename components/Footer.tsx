@@ -4,20 +4,20 @@ import { FiFacebook, FiTwitter, FiInstagram, FiLinkedin, FiMail, FiStar } from '
 export default function Footer() {
   return (
     <footer className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-gray-300">
-      <div className="container mx-auto px-4 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
+      <div className="container mx-auto px-6 md:px-8 py-20">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-16">
           {/* About */}
           <div>
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-xl flex items-center justify-center">
-                <FiStar className="text-white text-xl" />
+            <div className="flex items-center space-x-3 mb-6">
+              <div className="w-12 h-12 bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-xl flex items-center justify-center">
+                <FiStar className="text-white text-2xl" />
               </div>
-              <span className="text-xl font-bold text-white">Ummah</span>
+              <span className="text-2xl font-bold text-white">Ummah</span>
             </div>
-            <p className="text-sm text-gray-400 leading-relaxed mb-6">
+            <p className="text-base text-gray-400 leading-relaxed mb-8">
               Connecting the Muslim community with trusted businesses, services, and trades.
             </p>
-            <div className="flex space-x-3">
+            <div className="flex space-x-4">
               <a href="#" className="w-10 h-10 rounded-lg bg-gray-800 hover:bg-emerald-600 flex items-center justify-center transition-all hover:scale-110">
                 <FiFacebook className="text-lg" />
               </a>
@@ -35,8 +35,8 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-white text-lg font-bold mb-4">Quick Links</h3>
-            <ul className="space-y-3 text-sm">
+            <h3 className="text-white text-xl font-bold mb-6">Quick Links</h3>
+            <ul className="space-y-4 text-base">
               <li>
                 <Link href="/businesses" className="hover:text-emerald-400 transition-colors flex items-center group">
                   <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 mr-2 group-hover:w-2 group-hover:h-2 transition-all"></span>
@@ -66,8 +66,8 @@ export default function Footer() {
 
           {/* Categories */}
           <div>
-            <h3 className="text-white text-lg font-bold mb-4">Categories</h3>
-            <ul className="space-y-3 text-sm">
+            <h3 className="text-white text-xl font-bold mb-6">Categories</h3>
+            <ul className="space-y-4 text-base">
               <li>
                 <Link href="/category/services" className="hover:text-emerald-400 transition-colors flex items-center group">
                   <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 mr-2 group-hover:w-2 group-hover:h-2 transition-all"></span>
@@ -103,8 +103,8 @@ export default function Footer() {
 
           {/* Support */}
           <div>
-            <h3 className="text-white text-lg font-bold mb-4">Support</h3>
-            <ul className="space-y-3 text-sm">
+            <h3 className="text-white text-xl font-bold mb-6">Support</h3>
+            <ul className="space-y-4 text-base">
               <li>
                 <Link href="/about" className="hover:text-emerald-400 transition-colors flex items-center group">
                   <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 mr-2 group-hover:w-2 group-hover:h-2 transition-all"></span>
@@ -140,17 +140,17 @@ export default function Footer() {
         </div>
 
         {/* Newsletter */}
-        <div className="mt-12 p-8 rounded-2xl bg-gradient-to-r from-emerald-600 to-blue-600">
+        <div className="mt-16 p-10 rounded-2xl bg-gradient-to-r from-emerald-600 to-blue-600">
           <div className="max-w-2xl mx-auto text-center">
-            <h3 className="text-2xl font-bold text-white mb-2">Stay Updated</h3>
-            <p className="text-emerald-50 mb-6">Subscribe to get the latest Muslim businesses and community updates</p>
-            <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+            <h3 className="text-3xl font-bold text-white mb-4">Stay Updated</h3>
+            <p className="text-emerald-50 mb-8 text-lg">Subscribe to get the latest Muslim businesses and community updates</p>
+            <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="flex-1 px-5 py-3 rounded-xl bg-white/20 backdrop-blur-sm border border-white/30 text-white placeholder:text-white/70 focus:outline-none focus:ring-2 focus:ring-white/50"
+                className="flex-1 px-6 py-4 rounded-xl bg-white/20 backdrop-blur-sm border border-white/30 text-white placeholder:text-white/70 focus:outline-none focus:ring-2 focus:ring-white/50"
               />
-              <button className="px-6 py-3 bg-white text-emerald-600 rounded-xl hover:bg-gray-100 transition-all font-semibold whitespace-nowrap">
+              <button className="px-8 py-4 bg-white text-emerald-600 rounded-xl hover:bg-gray-100 transition-all font-semibold whitespace-nowrap">
                 Subscribe
               </button>
             </div>
@@ -158,8 +158,8 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-gray-800 mt-12 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-400">
+        <div className="border-t border-gray-800 mt-16 pt-10">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-6 text-base text-gray-400">
             <p>&copy; {new Date().getFullYear()} Ummah Marketplace. All rights reserved.</p>
             <p className="text-center">Built with trust and service for the Muslim community 💚</p>
           </div>

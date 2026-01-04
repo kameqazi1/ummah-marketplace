@@ -24,8 +24,8 @@ export default function Navbar() {
           : 'bg-white/80 backdrop-blur-md shadow-sm'
       }`}
     >
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-18 py-3">
+      <div className="container mx-auto px-6 md:px-8">
+        <div className="flex items-center justify-between h-20 py-4">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2 group">
             <div className="w-10 h-10 bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-xl flex items-center justify-center transform group-hover:scale-105 transition-transform">
@@ -38,15 +38,15 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-1">
-            <Link href="/businesses" className="px-4 py-2 text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-all font-medium">
+          <div className="hidden md:flex items-center space-x-2">
+            <Link href="/businesses" className="px-5 py-2.5 text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-all font-medium">
               Businesses
             </Link>
-            <Link href="/listings" className="px-4 py-2 text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-all font-medium">
+            <Link href="/listings" className="px-5 py-2.5 text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-all font-medium">
               Listings
             </Link>
-            <Link href="/map" className="px-4 py-2 flex items-center text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-all font-medium">
-              <FiMapPin className="mr-1.5" />
+            <Link href="/map" className="px-5 py-2.5 flex items-center text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-all font-medium">
+              <FiMapPin className="mr-2" />
               Map View
             </Link>
           </div>
@@ -64,22 +64,22 @@ export default function Navbar() {
           </div>
 
           {/* Right Side Actions */}
-          <div className="hidden md:flex items-center space-x-3">
-            <Link href="/favorites" className="p-2.5 text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-all">
+          <div className="hidden md:flex items-center space-x-4">
+            <Link href="/favorites" className="p-3 text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-all">
               <FiHeart className="text-xl" />
             </Link>
-            <Link href="/login" className="px-4 py-2.5 text-gray-700 hover:text-emerald-600 font-medium transition-all">
+            <Link href="/login" className="px-5 py-2.5 text-gray-700 hover:text-emerald-600 font-medium transition-all">
               Login
             </Link>
             <Link
               href="/register"
-              className="px-5 py-2.5 bg-gradient-to-r from-emerald-500 to-emerald-600 text-white rounded-xl hover:from-emerald-600 hover:to-emerald-700 transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5 font-medium"
+              className="px-6 py-3 bg-gradient-to-r from-emerald-500 to-emerald-600 text-white rounded-xl hover:from-emerald-600 hover:to-emerald-700 transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5 font-medium"
             >
               Sign Up
             </Link>
             <Link
               href="/add-business"
-              className="px-5 py-2.5 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-xl hover:from-blue-600 hover:to-blue-700 transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5 font-medium"
+              className="px-6 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-xl hover:from-blue-600 hover:to-blue-700 transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5 font-medium"
             >
               Add Business
             </Link>
@@ -96,40 +96,40 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden py-4 border-t">
-            <div className="flex flex-col space-y-3">
-              <div className="relative mb-3">
+          <div className="md:hidden py-6 border-t">
+            <div className="flex flex-col space-y-4">
+              <div className="relative mb-4">
                 <input
                   type="text"
                   placeholder="Search..."
-                  className="w-full px-4 py-2 pl-10 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                  className="w-full px-4 py-3 pl-11 rounded-lg border-2 border-gray-300 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500"
                 />
-                <FiSearch className="absolute left-3 top-3 text-gray-400" />
+                <FiSearch className="absolute left-4 top-4 text-gray-400" />
               </div>
-              <Link href="/businesses" className="text-gray-700 hover:text-emerald-600 py-2">
+              <Link href="/businesses" className="text-gray-700 hover:text-emerald-600 py-3 text-lg font-medium">
                 Businesses
               </Link>
-              <Link href="/listings" className="text-gray-700 hover:text-emerald-600 py-2">
+              <Link href="/listings" className="text-gray-700 hover:text-emerald-600 py-3 text-lg font-medium">
                 Listings
               </Link>
-              <Link href="/map" className="text-gray-700 hover:text-emerald-600 py-2">
+              <Link href="/map" className="text-gray-700 hover:text-emerald-600 py-3 text-lg font-medium">
                 Map View
               </Link>
-              <Link href="/favorites" className="text-gray-700 hover:text-emerald-600 py-2">
+              <Link href="/favorites" className="text-gray-700 hover:text-emerald-600 py-3 text-lg font-medium">
                 Favorites
               </Link>
-              <Link href="/login" className="text-gray-700 hover:text-emerald-600 py-2">
+              <Link href="/login" className="text-gray-700 hover:text-emerald-600 py-3 text-lg font-medium">
                 Login
               </Link>
               <Link
                 href="/register"
-                className="px-4 py-2 bg-emerald-600 text-white rounded-lg text-center"
+                className="px-6 py-3.5 mt-2 bg-emerald-600 text-white rounded-lg text-center font-medium"
               >
                 Sign Up
               </Link>
               <Link
                 href="/add-business"
-                className="px-4 py-2 bg-blue-600 text-white rounded-lg text-center"
+                className="px-6 py-3.5 bg-blue-600 text-white rounded-lg text-center font-medium"
               >
                 Add Business
               </Link>
