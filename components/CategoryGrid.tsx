@@ -15,57 +15,57 @@ const categories = [
     name: 'Home Services',
     slug: 'home-services',
     icon: FiHome,
-    gradient: 'from-blue-500 to-blue-600',
-    bgGradient: 'from-blue-50 to-blue-100',
+    gradient: 'from-teal-600 to-teal-700',
+    bgGradient: 'from-teal-50 to-teal-100',
   },
   {
     name: 'Professional Services',
     slug: 'professional-services',
     icon: FiBriefcase,
-    gradient: 'from-purple-500 to-purple-600',
-    bgGradient: 'from-purple-50 to-purple-100',
+    gradient: 'from-cyan-600 to-cyan-700',
+    bgGradient: 'from-cyan-50 to-cyan-100',
   },
   {
     name: 'For Sale',
     slug: 'for-sale',
     icon: FiShoppingBag,
-    gradient: 'from-emerald-500 to-emerald-600',
+    gradient: 'from-emerald-600 to-emerald-700',
     bgGradient: 'from-emerald-50 to-emerald-100',
   },
   {
     name: 'Trades & Repairs',
     slug: 'trades-repairs',
     icon: FiTool,
-    gradient: 'from-orange-500 to-orange-600',
-    bgGradient: 'from-orange-50 to-orange-100',
+    gradient: 'from-amber-600 to-amber-700',
+    bgGradient: 'from-amber-50 to-amber-100',
   },
   {
     name: 'Food & Catering',
     slug: 'food-catering',
     icon: FiTruck,
-    gradient: 'from-red-500 to-red-600',
-    bgGradient: 'from-red-50 to-red-100',
+    gradient: 'from-orange-600 to-orange-700',
+    bgGradient: 'from-orange-50 to-orange-100',
   },
   {
     name: 'Community Events',
     slug: 'community-events',
     icon: FiUsers,
-    gradient: 'from-indigo-500 to-indigo-600',
-    bgGradient: 'from-indigo-50 to-indigo-100',
+    gradient: 'from-blue-600 to-blue-700',
+    bgGradient: 'from-blue-50 to-blue-100',
   },
   {
     name: 'Education',
     slug: 'education',
     icon: FiBook,
-    gradient: 'from-yellow-500 to-yellow-600',
-    bgGradient: 'from-yellow-50 to-yellow-100',
+    gradient: 'from-violet-600 to-violet-700',
+    bgGradient: 'from-violet-50 to-violet-100',
   },
   {
     name: 'Wedding Services',
     slug: 'wedding-services',
     icon: FiHeart,
-    gradient: 'from-pink-500 to-pink-600',
-    bgGradient: 'from-pink-50 to-pink-100',
+    gradient: 'from-rose-600 to-rose-700',
+    bgGradient: 'from-rose-50 to-rose-100',
   },
 ];
 
@@ -78,7 +78,7 @@ export default function CategoryGrid() {
           <Link
             key={category.slug}
             href={`/category/${category.slug}`}
-            className="group relative overflow-hidden rounded-2xl bg-white border-2 border-gray-100 hover:border-transparent hover:shadow-2xl transition-all duration-300 card-hover"
+            className="group relative overflow-hidden rounded-2xl bg-white border border-stone-200 hover:border-transparent hover:shadow-lg transition-all duration-300 card-hover"
             style={{ animationDelay: `${index * 0.1}s` }}
           >
             {/* Gradient Background on Hover */}
@@ -89,10 +89,10 @@ export default function CategoryGrid() {
               <div className={`w-20 h-20 rounded-2xl bg-gradient-to-br ${category.bgGradient} flex items-center justify-center mb-5 group-hover:scale-110 group-hover:bg-white/20 transition-all duration-300`}>
                 <Icon className={`text-4xl bg-gradient-to-br ${category.gradient} bg-clip-text text-transparent group-hover:text-white transition-colors`} />
               </div>
-              <h3 className="font-bold text-gray-900 group-hover:text-white transition-colors text-xl mb-3">
+              <h3 className="font-bold text-stone-900 group-hover:text-white transition-colors text-xl mb-3">
                 {category.name}
               </h3>
-              <div className="flex items-center text-base text-gray-500 group-hover:text-white/80 transition-colors">
+              <div className="flex items-center text-base text-stone-500 group-hover:text-white/90 transition-colors">
                 <span>Explore →</span>
               </div>
             </div>

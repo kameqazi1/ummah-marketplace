@@ -28,24 +28,24 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-20 py-4">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2 group">
-            <div className="w-10 h-10 bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-xl flex items-center justify-center transform group-hover:scale-105 transition-transform">
+            <div className="w-10 h-10 bg-gradient-to-br from-teal-600 to-teal-700 rounded-xl flex items-center justify-center transform group-hover:scale-105 transition-transform">
               <FiStar className="text-white text-xl" />
             </div>
             <div className="flex flex-col">
               <span className="text-xl font-bold gradient-text">Ummah</span>
-              <span className="text-[10px] text-gray-500 -mt-1 hidden sm:block">Marketplace</span>
+              <span className="text-[10px] text-stone-500 -mt-1 hidden sm:block">Marketplace</span>
             </div>
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-2">
-            <Link href="/businesses" className="px-5 py-2.5 text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-all font-medium">
+            <Link href="/businesses" className="px-5 py-2.5 text-stone-700 hover:text-teal-700 hover:bg-teal-50 rounded-lg transition-all font-medium">
               Businesses
             </Link>
-            <Link href="/listings" className="px-5 py-2.5 text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-all font-medium">
+            <Link href="/listings" className="px-5 py-2.5 text-stone-700 hover:text-teal-700 hover:bg-teal-50 rounded-lg transition-all font-medium">
               Listings
             </Link>
-            <Link href="/map" className="px-5 py-2.5 flex items-center text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-all font-medium">
+            <Link href="/map" className="px-5 py-2.5 flex items-center text-stone-700 hover:text-teal-700 hover:bg-teal-50 rounded-lg transition-all font-medium">
               <FiMapPin className="mr-2" />
               Map View
             </Link>
@@ -65,21 +65,21 @@ export default function Navbar() {
 
           {/* Right Side Actions */}
           <div className="hidden md:flex items-center space-x-4">
-            <Link href="/favorites" className="p-3 text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-all">
+            <Link href="/favorites" className="p-3 text-stone-700 hover:text-teal-700 hover:bg-teal-50 rounded-lg transition-all">
               <FiHeart className="text-xl" />
             </Link>
-            <Link href="/login" className="px-5 py-2.5 text-gray-700 hover:text-emerald-600 font-medium transition-all">
+            <Link href="/login" className="px-5 py-2.5 text-stone-700 hover:text-teal-700 font-medium transition-all">
               Login
             </Link>
             <Link
               href="/register"
-              className="px-6 py-3 bg-gradient-to-r from-emerald-500 to-emerald-600 text-white rounded-xl hover:from-emerald-600 hover:to-emerald-700 transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5 font-medium"
+              className="px-6 py-3 bg-teal-600 text-white rounded-xl hover:bg-teal-700 transition-all shadow-sm hover:shadow-md transform hover:-translate-y-0.5 font-medium"
             >
               Sign Up
             </Link>
             <Link
               href="/add-business"
-              className="px-6 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-xl hover:from-blue-600 hover:to-blue-700 transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5 font-medium"
+              className="px-6 py-3 bg-amber-600 text-white rounded-xl hover:bg-amber-700 transition-all shadow-sm hover:shadow-md transform hover:-translate-y-0.5 font-medium"
             >
               Add Business
             </Link>
@@ -106,30 +106,30 @@ export default function Navbar() {
                 />
                 <FiSearch className="absolute left-4 top-4 text-gray-400" />
               </div>
-              <Link href="/businesses" className="text-gray-700 hover:text-emerald-600 py-3 text-lg font-medium">
+              <Link href="/businesses" className="text-stone-700 hover:text-teal-700 py-3 text-lg font-medium">
                 Businesses
               </Link>
-              <Link href="/listings" className="text-gray-700 hover:text-emerald-600 py-3 text-lg font-medium">
+              <Link href="/listings" className="text-stone-700 hover:text-teal-700 py-3 text-lg font-medium">
                 Listings
               </Link>
-              <Link href="/map" className="text-gray-700 hover:text-emerald-600 py-3 text-lg font-medium">
+              <Link href="/map" className="text-stone-700 hover:text-teal-700 py-3 text-lg font-medium">
                 Map View
               </Link>
-              <Link href="/favorites" className="text-gray-700 hover:text-emerald-600 py-3 text-lg font-medium">
+              <Link href="/favorites" className="text-stone-700 hover:text-teal-700 py-3 text-lg font-medium">
                 Favorites
               </Link>
-              <Link href="/login" className="text-gray-700 hover:text-emerald-600 py-3 text-lg font-medium">
+              <Link href="/login" className="text-stone-700 hover:text-teal-700 py-3 text-lg font-medium">
                 Login
               </Link>
               <Link
                 href="/register"
-                className="px-6 py-3.5 mt-2 bg-emerald-600 text-white rounded-lg text-center font-medium"
+                className="px-6 py-3.5 mt-2 bg-teal-600 text-white rounded-lg text-center font-medium"
               >
                 Sign Up
               </Link>
               <Link
                 href="/add-business"
-                className="px-6 py-3.5 bg-blue-600 text-white rounded-lg text-center font-medium"
+                className="px-6 py-3.5 bg-amber-600 text-white rounded-lg text-center font-medium"
               >
                 Add Business
               </Link>
